@@ -1,0 +1,6 @@
+# Versions used and tested for this project (Python 3.12.2, Windows 11).
+pandas==2.2.3
+duckdb==1.5.4
+streamlit==1.45.1
+plotly==6.7.0
+pytest==9.1.1

@@ -1,0 +1,2 @@
+scoped_rows,eligible_purchases,returned_purchases,unknown_outcome_purchases,returned_with_value,value_associated_with_returned,value_all_eligible,returns_with_valid_timing,median_days_order_to_return,first_order_date,last_order_date,return_rate,returned_value_coverage,timing_coverage
+10000,10000,5052,0,5052,3843159.72,7626183.56,2539,217.0,2023-01-01,2024-12-31,0.5052,1.0,0.5025732383214568

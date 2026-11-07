@@ -1,0 +1,6 @@
+priority_rank,product_category,eligible_purchases,returned_purchases,return_rate,baseline_rate,rate_diff_pp,share_of_returns,leading_reason,leading_reason_share,leading_reason_margin_pp,reasons_tied_at_top,value_associated_with_returned,returned_value_coverage,meets_min_support,support_label,ranking_basis
+1,Clothing,2000,1049,0.5245,0.5052,1.9299999999999984,0.2076405384006334,Changed mind,0.2621544327931363,0.19065776930409783,1,792846.35,1.0,True,ok,value associated with returned orders
+2,Books,2041,1034,0.5066144047035767,0.5052,0.1414404703576677,0.2046714172604909,Wrong item,0.2620889748549323,0.8704061895551285,1,773181.1,1.0,True,ok,value associated with returned orders
+3,Home,2030,995,0.49014778325123154,0.5052,-1.5052216748768443,0.19695170229612036,Changed mind,0.2623115577889447,0.4020100502512558,1,772753.69,1.0,True,ok,value associated with returned orders
+4,Electronics,1985,1011,0.5093198992443325,0.5052,0.41198992443325366,0.2001187648456057,Defective,0.27002967359050445,1.582591493570723,1,767663.76,1.0,True,ok,value associated with returned orders
+5,Toys,1944,963,0.49537037037037035,0.5052,-0.9829629629629633,0.19061757719714964,Defective,0.2720664589823468,2.596053997923156,1,736714.82,1.0,True,ok,value associated with returned orders

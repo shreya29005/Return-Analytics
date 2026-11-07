@@ -1,0 +1,2 @@
+eligible_purchases,distinct_products,products_with_2plus_purchases,max_purchases_per_product,distinct_users,users_with_2plus_purchases,products_meeting_min_support,product_level_verdict
+10000,10000,0,1,10000,0,0,not supported: use category level

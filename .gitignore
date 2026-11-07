@@ -1,0 +1,30 @@
+# Python / environments
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Raw downloads and rebuildable data (see docs/data_source.md to re-acquire)
+data/raw/*
+!data/raw/README.md
+data/processed/
+data/*.duckdb
+data/*.duckdb.wal
+*.duckdb.wal
+
+# Credentials and tokens
+.env
+kaggle.json
+*.token
+
+# Local tool settings, prompts and session files
+.claude/settings.local.json
+.claude/
+*.transcript.*
+prompts/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,31 @@
+section,metric,value,note
+reconciliation,source_rows,10000,
+reconciliation,excluded_rows_total,0,
+reconciliation,retained_rows,10000,
+reconciliation,reconciles,True,source_rows = excluded_rows_total + retained_rows
+reconciliation,returns_rows,5052,Retained rows with is_returned = true
+retained_flags,return_before_order,2513,Flags can overlap; rows remain in the analysis
+checks,cells_with_surrounding_whitespace,0,
+checks,unknown_outcome_rows,0,
+checks,rows_value_fields_valid,10000,unit_price > 0 and order_quantity positive integer
+checks,returns_timing_valid,2539,Return date on/after order date
+semantics,discount_greater_than_unit_price,395,Discount unit (per item vs per order) not established; discount not analysed
+semantics,discount_greater_than_price_x_quantity,137,
+semantics,distinct_product_ids_retained,10000,
+semantics,distinct_user_ids_retained,10000,
+sql_checks,orders_order_id_unique,pass,observed=0.0 expected=0.0
+sql_checks,returns_order_id_unique,pass,observed=0.0 expected=0.0
+sql_checks,orphan_returns,pass,observed=0.0 expected=0.0
+sql_checks,returned_orders_missing_return_row,pass,observed=0.0 expected=0.0
+sql_checks,return_rows_on_non_returned_orders,pass,observed=0.0 expected=0.0
+sql_checks,outcome_known_flag_consistent,pass,observed=0.0 expected=0.0
+sql_checks,join_cardinality_view_minus_orders,pass,observed=0.0 expected=0.0
+sql_checks,eligible_equals_returned_plus_kept,pass,observed=0.0 expected=0.0
+sql_checks,metadata_retained_rows_match_orders,pass,observed=1.0 expected=1.0
+sql_checks,overall_rate_in_0_1,pass,observed=1.0 expected=1.0
+sql_checks,reason_shares_sum_to_1,pass,observed=1.0 expected=1.0
+sql_checks,category_returned_sum_matches_total,pass,observed=0.0 expected=0.0
+sql_checks,category_eligible_sum_matches_total,pass,observed=0.0 expected=0.0
+sql_checks,value_view_matches_direct_sum,pass,observed=1.0 expected=1.0
+sql_checks,value_outcome_split_reconciles,pass,observed=1.0 expected=1.0
+sql_checks,timing_valid_matches_dates,pass,observed=0.0 expected=0.0

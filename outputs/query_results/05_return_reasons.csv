@@ -1,0 +1,6 @@
+return_reason,returned_purchases,total_returned_purchases,eligible_purchases,share_of_returns,reason_rate_of_eligible
+Defective,1327,5052,10000,0.26266825019794143,0.1327
+Wrong item,1258,5052,10000,0.24901029295328583,0.1258
+Changed mind,1255,5052,10000,0.24841646872525733,0.1255
+Not as described,1212,5052,10000,0.23990498812351543,0.1212
+Unknown / not provided,0,5052,10000,0.0,0.0

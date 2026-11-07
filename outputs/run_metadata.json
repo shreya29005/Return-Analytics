@@ -1,0 +1,73 @@
+{
+  "build_id": "20261107T194005Z-643434207924",
+  "built_at_utc": "2026-11-07T19:40:05+00:00",
+  "dataset": {
+    "source_url": "https://www.kaggle.com/datasets/sayalikhot21/synthetic-dataset-for-e-commerce-return-analysis",
+    "raw_file": "data/raw/ecommerce_returns_synthetic_data.csv",
+    "sha256": "6434342079240d30cd983a816508ed4abfc3c759188e6a79f6ebf072a67cde24"
+  },
+  "counts": {
+    "source_rows": 10000,
+    "excluded_rows": 0,
+    "excluded_by_primary_reason": {},
+    "retained_orders": 10000,
+    "returns_rows": 5052,
+    "eligible_purchases": 10000,
+    "returned_purchases": 5052
+  },
+  "integrity_checks": {
+    "orders_order_id_unique": true,
+    "returns_order_id_unique": true,
+    "orphan_returns": true,
+    "returned_orders_missing_return_row": true,
+    "return_rows_on_non_returned_orders": true,
+    "outcome_known_flag_consistent": true,
+    "join_cardinality_view_minus_orders": true,
+    "eligible_equals_returned_plus_kept": true,
+    "metadata_retained_rows_match_orders": true,
+    "overall_rate_in_0_1": true,
+    "reason_shares_sum_to_1": true,
+    "category_returned_sum_matches_total": true,
+    "category_eligible_sum_matches_total": true,
+    "value_view_matches_direct_sum": true,
+    "value_outcome_split_reconciles": true,
+    "timing_valid_matches_dates": true
+  },
+  "export_filters": {
+    "start_date": "2023-01-01",
+    "end_date": "2024-12-31",
+    "categories": [
+      "Books",
+      "Clothing",
+      "Electronics",
+      "Home",
+      "Toys"
+    ],
+    "min_support": 50
+  },
+  "exports": {
+    "01_overview.csv": 1,
+    "02_monthly_cohorts.csv": 24,
+    "03_category_summary.csv": 5,
+    "04_product_support.csv": 1,
+    "05_return_reasons.csv": 5,
+    "06_category_reason.csv": 20,
+    "07_segment_comparison__shipping_method.csv": 3,
+    "07_segment_comparison__payment_method.csv": 4,
+    "07_segment_comparison__price_band.csv": 5,
+    "08_segment_within_category__shipping_method.csv": 15,
+    "08_segment_within_category__payment_method.csv": 20,
+    "08_segment_within_category__price_band.csv": 25,
+    "09_timing_summary.csv": 10,
+    "09_timing_distribution.csv": 25,
+    "10_priorities.csv": 5
+  },
+  "package_versions": {
+    "python": "3.12.2",
+    "pandas": "2.2.3",
+    "duckdb": "1.5.4",
+    "streamlit": "1.45.1",
+    "plotly": "6.7.0",
+    "pytest": "9.1.1"
+  }
+}
